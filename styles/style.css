@@ -1,0 +1,80 @@
+:root {
+    font-size: 62.5%;
+    color: antiquewhite;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: inherit;
+    font-family: inherit;
+    color: inherit;
+}
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 1.6rem;
+}
+
+/* -- HEADER START -- */
+header {
+    display: flex;
+}
+.tab {
+    width: calc(100% / 3);
+    height: 5rem;
+    border: 1px solid limegreen;
+    text-align: center;
+}
+/* -- HEADER END -- */
+
+/* -- GRID START -- */
+.grid-container {
+    display: grid;
+    grid-template: repeat(5, 1fr) / repeat(2, 1fr);
+    background: red;
+}
+/* -- GRID END -- */
+
+/* -- SPLASH START -- */
+#splash-tile {
+    grid-column-end: span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 70vh;
+    background-image: url("/src/index-images/cantina-band.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.splash-text {
+    display: block;
+    text-align: center;
+}
+.photo-caption {
+    position: relative;
+    bottom: 2rem;
+    width: 100%;
+    background: pink;
+}
+/* -- SPLASH END -- */
+
+/* -- SMALL TILES START -- */
+.small-tile {
+    border: 2px solid blue;
+    text-align: center;
+}
+/* -- SMALL TILES END -- */
+
+/* -- TESTIMONIALS START -- */
+#testimonials {
+    grid-column-end: span 2;
+    background: pink;
+}
+.testimony {
+    display: block;
+    text-align: center;
+    background: green;
+}
+/* -- TESTIMONIALS END -- */
