@@ -8,10 +8,14 @@ Some joke about scum and villainy
 ##### Features
 ##### Behavior
 ##### Style
+- index; iron out responsiveness and breakpoints for tiles
 ##### Other
 ##### Maybe
 
 #### DONE
+- *0.0.2*
+- index; build small tiles with javascript
+- index; fiddle with tile styling
 - *0.0.1*
 - add basic home page setup
 - add some initial styling for the home page
