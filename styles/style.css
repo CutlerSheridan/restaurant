@@ -67,10 +67,12 @@ header {
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: 50vw;
     max-width: 100rem;
+    font-size: 2rem;
 }
 .small-tile {
     text-align: center;
     margin: 2rem;
+    border: 1px solid pink;
 }
 @media only screen and (min-width: 600px) {
     .grid-container {
@@ -97,11 +99,17 @@ header {
 /* -- TESTIMONIALS START -- */
 #testimonials {
     grid-column-end: span 2;
-    background: pink;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
 }
 .testimony {
-    display: block;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    background: green;
+    min-height: 5rem;
+    border: 1px solid black;
 }
 /* -- TESTIMONIALS END -- */
