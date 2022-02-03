@@ -1,3 +1,7 @@
+import Drinks from "./index-images/drinks.jpg";
+import MazBand from "./index-images/maz-band.jpg";
+import AlienPatron from "./index-images/alien-patron.jpeg";
+
 const createHome = () => {
     const splashTile = document.createElement("div");
     splashTile.id = "splash-tile";
@@ -18,11 +22,11 @@ const createHome = () => {
     const gridContainer = document.createElement("section");
     gridContainer.classList.add("grid-container");
     const smallTileContent = [
-        "url(\"/src/index-images/drinks.jpg\")",
+        `url("${Drinks}")`,
         "Looking to get drunk cheap?  You won't find cheaper, stronger drinks anywhere on Tatooine!",
         "Toast your success or drown your sorrows while listening to the hottest bands in town!",
-        'url("/src/index-images/maz-band.jpg")',
-        'url("/src/index-images/patron.jpeg")',
+        `url("${MazBand}")`,
+        `url("${AlienPatron}")`,
         "We don't care what you are — Mind your own business and you're welcome anytime \n (No droids)"
     ];
     let smallTileTracker = 4;

@@ -3,7 +3,6 @@
 Some joke about scum and villainy
 
 #### TO-DO NEXT
-- process images with webpack into bundle
 #### TO-DO LATER
 - create Menu page
 - create Contact page
@@ -14,11 +13,15 @@ Some joke about scum and villainy
 ##### Behavior
 ##### Style
 - index; iron out responsiveness and breakpoints for tiles
-- index; iron out text box sizing for tiles
+- index; iron out text wrap behavior and size for tiles
 ##### Other
 ##### Maybe
 
 #### DONE
+- *0.2.2*
+- add sourcemap
+- process images with webpack into bundle
+- index; move Cantina Band pic back to css for faster loading
 - *0.2.1*
 - make tabs clickable
 - add logic to clear content from #content
