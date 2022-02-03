@@ -1,7 +1,10 @@
 import createHome from "./home-content";
+import clearDOMBody from "./clear-DOM-body";
 
 const createBase = (() => {
     const contentBase = document.querySelector("#content");
+    const baseContainer = document.createElement("section");
+    baseContainer.classList.add("base-container");
 
     const header = document.createElement("header");
     const tabHome = document.createElement("div");
@@ -19,7 +22,29 @@ const createBase = (() => {
         tab.classList.add("tab");
         header.append(tab);
     });
-    contentBase.append(header, createHome.homeFragment);
+    baseContainer.append(header);
+    contentBase.append(baseContainer);
+    createHome();
 })();
 
-console.log("hello");
+const controlTabs = (() => {
+    const tabs = document.querySelectorAll(".tab");
+    tabs.forEach(tab => tab.addEventListener("click", (e) => {
+        if (!e.target.classList.contains("active-tab")) {
+            tabs.forEach(tab => tab.classList.remove("active-tab"));
+            e.target.classList.add("active-tab");
+            try {
+                clearDOMBody();
+            } catch { }
+            switch (e.target.id) {
+                case "tab-home":
+                    createHome();
+                    break;
+                case "tab-menu":
+                    break;
+                case "tab-contact":
+                    break;
+            }
+        }
+    }))
+})();

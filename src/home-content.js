@@ -1,4 +1,4 @@
-const createHome = (() => {
+const createHome = () => {
     const splashTile = document.createElement("div");
     splashTile.id = "splash-tile";
     const splashRestaurantName = document.createElement("h1");
@@ -61,9 +61,12 @@ const createHome = (() => {
     }
     gridContainer.append(fragment, testimonials);
 
-    const homeFragment = document.createDocumentFragment();
-    homeFragment.append(splashTile, photoCaption, gridContainer);
-    return {homeFragment};
-})();
+    const homeContainer = document.createElement("div");
+    homeContainer.classList.add("content-container");
+    homeContainer.append(splashTile, photoCaption, gridContainer);
+
+    const baseContainer = document.querySelector(".base-container");
+    baseContainer.after(homeContainer);
+};
 
 export default createHome;

@@ -4,10 +4,12 @@ Some joke about scum and villainy
 
 #### TO-DO NEXT
 - process images with webpack into bundle
-- make tabs clickable
-- add logic to clear content from #content
 #### TO-DO LATER
+- create Menu page
+- create Contact page
+- fix tabs changing sizes when clicked
 - separate css into separate files that get packaged into one?
+- research try/catch statements
 ##### Features
 ##### Behavior
 ##### Style
@@ -17,6 +19,11 @@ Some joke about scum and villainy
 ##### Maybe
 
 #### DONE
+- *0.2.1*
+- make tabs clickable
+- add logic to clear content from #content
+- make createHome properly callable
+- adjust controlTabs() to add About when clicked again after clearing
 - *0.1.1*
 - revert index.html to read from packaged main.js
 - import createHomePage
