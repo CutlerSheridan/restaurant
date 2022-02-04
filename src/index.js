@@ -25,6 +25,7 @@ const createBase = (() => {
     baseContainer.append(header);
     contentBase.append(baseContainer);
     createHome();
+    clearDOMBody();
 })();
 
 const controlTabs = (() => {

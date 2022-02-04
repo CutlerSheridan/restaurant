@@ -3,6 +3,7 @@
 Some joke about scum and villainy
 
 #### TO-DO NEXT
+- play with box-shadow styling for menu cards
 #### TO-DO LATER
 - create Menu page
 - create Contact page
@@ -18,6 +19,9 @@ Some joke about scum and villainy
 ##### Maybe
 
 #### DONE
+- *0.3.0*
+- start html design of Menu page
+- start styling Menu page
 - *0.2.2*
 - add sourcemap
 - process images with webpack into bundle

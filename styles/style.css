@@ -113,3 +113,44 @@ header {
     border: 1px solid black;
 }
 /* -- TESTIMONIALS END -- */
+
+/* ******************** */
+/* ******************** */
+/* ******************** */
+/* ******************** */
+/* ******************** */
+
+.h1-m {
+    margin: 2rem;
+    text-align: center;
+}
+.h2-m {
+    text-align: center;
+}
+.menu-item-big-container {
+    margin: 2rem auto;
+    padding: 1.3rem;
+    width: 90vw;
+    max-width: 70rem;
+    border: 2px solid grey;
+}
+.menu-item-small-container {
+    margin: auto;
+    padding-left: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: darkgoldenrod;
+}
+.menu-item-name {
+    font-size: 2rem;
+}
+.menu-item-desc {
+    font-size: 1.6rem;
+    font-style: italic;
+}
+.menu-item-pic {
+    height: 10rem;
+    width: 10rem;
+    object-fit: cover;
+}
