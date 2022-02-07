@@ -6,14 +6,16 @@ const createHome = () => {
     const splashTile = document.createElement("div");
     splashTile.id = "splash-tile";
     const splashRestaurantName = document.createElement("h1");
-    splashRestaurantName.classList.add("splash-text");
-    splashRestaurantName.id = "restaurant-name";
-    splashRestaurantName.textContent = "Mos Eisley Cantina";
+    splashRestaurantName.classList.add("splash-text", "h1-h");
+    splashRestaurantName.textContent = "Chalmun's Spaceport Cantina";
     const splashRestaurantSlogan = document.createElement("h2");
-    splashRestaurantSlogan.classList.add("splash-text");
-    splashRestaurantSlogan.id = "restaurant-slogan";
+    splashRestaurantSlogan.classList.add("splash-text", "h2-h");
+    // splashRestaurantSlogan.id = "restaurant-slogan";
     splashRestaurantSlogan.textContent = "Live music! Cheap drinks!";
-    splashTile.append(splashRestaurantName, splashRestaurantSlogan);
+    const splashLocation = document.createElement("h3");
+    splashLocation.classList.add("splash-text", "h3-h");
+    splashLocation.textContent = "Mos Eisley, Tatooine";
+    splashTile.append(splashRestaurantName, splashRestaurantSlogan, splashLocation);
 
     const photoCaption = document.createElement("span");
     photoCaption.classList.add("photo-caption");
@@ -52,10 +54,10 @@ const createHome = () => {
     testimonials.classList.add("big-tile");
     testimonials.id = "testimonials";
     const testimonialsArray = [
-        "I love it so much, my favorite bar",
-        "I do all my business dealings here",
-        "Can't be beat if you're looking for a good time",
-        "Not for the faint-hearted"
+        '"I love it so much, my favorite bar"',
+        '"I do all my business dealings here"',
+        '"Can\'t be beat if you\'re looking for a good time"',
+        '"Not for the faint-hearted"'
     ];
     for (let i = 0; i < 4; i++) {
         const testimony = document.createElement("div");

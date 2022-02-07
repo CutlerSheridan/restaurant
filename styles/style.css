@@ -36,6 +36,12 @@ header {
 }
 /* -- HEADER END -- */
 
+/* ******************** */
+/* ******************** */
+/* ******************** */
+/* ******************** */
+/* ******************** */
+
 /* -- SPLASH START -- */
 #splash-tile {
     /* grid-column-end: span 2; */
@@ -68,7 +74,9 @@ header {
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: 50vw;
     max-width: 100rem;
-    font-size: 2rem;
+    font-size: 1.8rem;
+    color: black;
+    font-weight: bold;
 }
 .small-tile {
     text-align: center;
@@ -92,7 +100,7 @@ header {
     border-radius: 100rem;
 }
 .desc-tile {
-    display: grid;
+    display: flex;
     align-items: center;
 }
 /* -- GRID END -- */
@@ -100,9 +108,10 @@ header {
 /* -- TESTIMONIALS START -- */
 #testimonials {
     grid-column-end: span 2;
+    margin: 1rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+    /* gap: 1.2rem; */
 }
 .testimony {
     margin: auto;
@@ -111,7 +120,7 @@ header {
     align-items: center;
     text-align: center;
     min-height: 5rem;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 /* -- TESTIMONIALS END -- */
 
@@ -122,16 +131,18 @@ header {
 /* ******************** */
 
 .h1-m {
-    margin: 2rem;
+    margin: 3rem 0 .7rem 0;
     text-align: center;
+    font-size: 4rem;
     color: black;
 }
 .h2-m {
     text-align: center;
+    font-size: 3rem;
     color: black;
 }
 .menu-item-container {
-    margin: 2rem auto;
+    margin: 2.5rem auto;
     width: 90vw;
     max-width: 70rem;
     display: flex;

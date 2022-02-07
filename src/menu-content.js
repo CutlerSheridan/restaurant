@@ -1,4 +1,8 @@
+import blueMilk from "./menu-images/blue-milk.jpg";
 import fuzzyTauntaun from "./menu-images/fuzzy-tauntaun.jpg";
+import tatooineSunset from "./menu-images/tatooine-sunset.jpeg";
+import yatooniBoska from "./menu-images/yatooni-boska.jpg";
+import tatooniJunko from "./menu-images/tatooni-junko.jpg";
 
 const createMenu = () => {
     const menuHeader = document.createElement("h1");
@@ -10,14 +14,29 @@ const createMenu = () => {
 
     const cocktails = [
         {
+            name: "Blue Milk",
+            desc: "A classic for a reason",
+            pic: blueMilk
+        },
+        {
             name: "Fuzzy Tauntaun",
-            desc: "Numbing foam gives this drink a special kick",
+            desc: "Numbing foam gives this drink a unique kick",
             pic: fuzzyTauntaun
         },
         {
-            name: "Tester",
-            desc: "test test test",
-            pic: "../src/index-images/alien-patron.jpeg"
+            name: "Tatooine Sunset",
+            desc: "The bittersweet taste of twilight",
+            pic: tatooineSunset
+        },
+        {
+            name: "Yatooni Boska",
+            desc: "Fermented dewback sweat (trust us — try it)",
+            pic: yatooniBoska
+        },
+        {
+            name: "Tatooni Junko",
+            desc: "A strong Hutt drink to start the night right",
+            pic: tatooniJunko
         }
     ];
     const allMenuItems = document.createElement("div");
