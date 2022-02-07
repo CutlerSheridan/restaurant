@@ -171,6 +171,10 @@ header {
     font-size: 1.6rem;
     /* font-style: italic; */
 }
+.pic-container {
+    height: 10rem;
+    width: 10rem;
+}
 .menu-item-pic {
     height: 10rem;
     width: 10rem;

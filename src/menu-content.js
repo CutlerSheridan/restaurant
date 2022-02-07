@@ -54,10 +54,13 @@ const createMenu = () => {
         itemDesc.textContent = cocktails[i].desc;
         menuText.append(itemName, itemDesc);
 
+        const picContainer = document.createElement("div");
+        picContainer.classList.add("pic-container");
         const itemPic = document.createElement("img");
         itemPic.classList.add("menu-item-pic");
         itemPic.src = cocktails[i].pic;
-        menuItem.append(menuText, itemPic);
+        picContainer.append(itemPic);
+        menuItem.append(menuText, picContainer);
 
         allMenuItems.append(menuItem);
     }

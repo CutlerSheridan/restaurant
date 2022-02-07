@@ -4,22 +4,24 @@ Some joke about scum and villainy
 
 #### TO-DO NEXT
 #### TO-DO LATER
-- create Menu page
-- create Contact page
-- fix tabs changing sizes when clicked
-- separate css into separate files that get packaged into one?
-- research try/catch statements
-- index; add spotify gradient to splash image
 ##### Features
+- create Contact page
 ##### Behavior
+- fix tabs changing sizes when clicked on desktop
 ##### Style
+- index; add spotify gradient to splash image
 - index; iron out responsiveness and breakpoints for tiles
 - index; iron out text wrap behavior and size for tiles
 - index; change size of splash image on desktop
 ##### Other
+- separate css into separate files that get packaged into one?
+- research try/catch statements
 ##### Maybe
 
 #### DONE
+- *0.3.4*
+- rearrange README
+- menu; add pics to containers so they don't change size upon loading
 - *0.3.3*
 - index; font adjustments
 - *0.3.2*
