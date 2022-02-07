@@ -3,22 +3,26 @@
 Some joke about scum and villainy
 
 #### TO-DO NEXT
-- play with box-shadow styling for menu cards
 #### TO-DO LATER
 - create Menu page
 - create Contact page
 - fix tabs changing sizes when clicked
 - separate css into separate files that get packaged into one?
 - research try/catch statements
+- index; add spotify gradient to splash image
 ##### Features
 ##### Behavior
 ##### Style
 - index; iron out responsiveness and breakpoints for tiles
 - index; iron out text wrap behavior and size for tiles
+- index; change size of splash image on desktop
 ##### Other
 ##### Maybe
 
 #### DONE
+- *0.3.1*
+- figure out style for menu page
+- convert Menu HTML to JS
 - *0.3.0*
 - start html design of Menu page
 - start styling Menu page

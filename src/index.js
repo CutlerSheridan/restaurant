@@ -1,4 +1,5 @@
 import createHome from "./home-content";
+import createMenu from "./menu-content";
 import clearDOMBody from "./clear-DOM-body";
 
 const createBase = (() => {
@@ -25,7 +26,6 @@ const createBase = (() => {
     baseContainer.append(header);
     contentBase.append(baseContainer);
     createHome();
-    clearDOMBody();
 })();
 
 const controlTabs = (() => {
@@ -42,6 +42,7 @@ const controlTabs = (() => {
                     createHome();
                     break;
                 case "tab-menu":
+                    createMenu();
                     break;
                 case "tab-contact":
                     break;

@@ -65,7 +65,7 @@ const createHome = () => {
     }
     gridContainer.append(fragment, testimonials);
 
-    const homeContainer = document.createElement("div");
+    const homeContainer = document.createElement("section");
     homeContainer.classList.add("content-container");
     homeContainer.append(splashTile, photoCaption, gridContainer);
 
