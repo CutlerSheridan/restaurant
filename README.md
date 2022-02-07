@@ -20,6 +20,8 @@ Some joke about scum and villainy
 ##### Maybe
 
 #### DONE
+- *0.3.3*
+- index; font adjustments
 - *0.3.2*
 - menu; fill in drinks list
 - *0.3.1*

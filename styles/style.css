@@ -59,6 +59,13 @@ header {
     display: block;
     text-align: center;
 }
+.h1-h {
+    font-size: 4rem;
+}
+.h2-h {
+    margin: .5rem;
+    font-size: 2.8rem;
+}
 .photo-caption {
     position: absolute;
     top: 72vh;
@@ -148,7 +155,7 @@ header {
     display: flex;
     align-items: center;
     color: black;
-    border: 5px solid black;
+    border: .6rem solid black;
 }
 .menu-text-container {
     margin: auto;
@@ -168,5 +175,5 @@ header {
     height: 10rem;
     width: 10rem;
     object-fit: cover;
-    border-left: 5px solid black;
+    border-left: .6rem solid black;
 }
