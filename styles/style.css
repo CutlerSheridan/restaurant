@@ -1,6 +1,6 @@
 :root {
     font-size: 62.5%;
-    color: antiquewhite;
+    color: black;
     background-color: goldenrod;
 }
 * {
@@ -29,10 +29,14 @@ header {
     height: 5rem;
     /* border: 1px solid limegreen; */
     text-align: center;
-    background: darkgoldenrod;
+    background: black;
+    color: goldenrod;
+    font-weight: bold;
 }
-.active-tab {
+.active-tab,
+.tab:hover {
     background: goldenrod;
+    color: black;
 }
 /* -- HEADER END -- */
 
@@ -54,6 +58,7 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    color: antiquewhite;
 }
 .splash-text {
     display: block;
@@ -137,6 +142,8 @@ header {
 /* ******************** */
 /* ******************** */
 
+/* -- MENU START -- */
+
 .h1-m {
     margin: 3rem 0 .7rem 0;
     text-align: center;
@@ -169,6 +176,7 @@ header {
 }
 .menu-item-desc {
     font-size: 1.6rem;
+    font-weight: initial;
     /* font-style: italic; */
 }
 .pic-container {
@@ -181,3 +189,27 @@ header {
     object-fit: cover;
     border-left: .6rem solid black;
 }
+
+/* -- MENU END -- */
+
+/* ******************** */
+/* ******************** */
+/* ******************** */
+/* ******************** */
+/* ******************** */
+
+/* -- CONTACT START -- */
+.h1-c {
+    margin: 3rem;
+    text-align: center;
+    font-size: 4rem;
+}
+.contact-block {
+    margin: 2rem 1rem;
+    padding-left: 1rem;
+    padding-bottom: .2rem;
+    font-size: 2rem;
+    /* border-right: .6rem solid black; */
+    border-left: .6rem solid black;
+}
+/* -- CONTACT END -- */

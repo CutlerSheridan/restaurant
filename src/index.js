@@ -1,5 +1,6 @@
 import createHome from "./home-content";
 import createMenu from "./menu-content";
+import createContact from "./contact-content";
 import clearDOMBody from "./clear-DOM-body";
 
 const createBase = (() => {
@@ -45,6 +46,7 @@ const controlTabs = (() => {
                     createMenu();
                     break;
                 case "tab-contact":
+                    createContact();
                     break;
             }
         }

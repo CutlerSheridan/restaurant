@@ -19,6 +19,12 @@ Some joke about scum and villainy
 ##### Maybe
 
 #### DONE
+- *0.4.1*
+- contact; convert HTML to JS
+- *0.4.0*
+- design Contact content
+- adjust tab styling
+- menu; adjust text styling
 - *0.3.4*
 - rearrange README
 - menu; add pics to containers so they don't change size upon loading
