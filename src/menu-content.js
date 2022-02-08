@@ -30,7 +30,7 @@ const createMenu = () => {
         },
         {
             name: "Yatooni Boska",
-            desc: "Fermented dewback sweat (trust us — try it)",
+            desc: "Fermented dewback sweat (trust us - try it)",
             pic: yatooniBoska
         },
         {

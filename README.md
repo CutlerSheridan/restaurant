@@ -4,14 +4,10 @@ Some joke about scum and villainy
 
 #### TO-DO NEXT
 - play with background color
-- play with underlines for tabs
 #### TO-DO LATER
 ##### Features
 ##### Behavior
 ##### Style
-- play with tab colors
-- index; iron out responsiveness and breakpoints for tiles
-- index; iron out text wrap behavior and size for tiles
 - contact; fix style on desktop
 ##### Other
 - separate css into separate files that get packaged into one?
@@ -20,6 +16,13 @@ Some joke about scum and villainy
 ##### Maybe
 
 #### DONE
+- *0.4.5*
+- change selected tab to underline
+- index; revamp grid style
+- index; change splash text sizes at breakpoints
+- index; make grid pics square
+- index; add black border between grid tiles
+- index; iron out responsiveness and breakpoints for tiles
 - *0.4.4*
 - index; choose fonts for headings and body text
 - index; adjust spacing for main grid

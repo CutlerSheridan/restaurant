@@ -57,14 +57,14 @@ const createHome = () => {
     testimonials.append(testimonialsHeader);
     const testimonialsArray = [
         '"I do all my business here. A loud, rough bar perfect for private conversations."',
-        '"If you can\'t make it to my cantina, Chalmun\'s is the next best thing."',
+        '"If you can\'t make it to MY cantina, Chalmun\'s in Mos Eisley is the next best thing."',
         '"I play gigs everywhere on Tatooine but nothing beats Chalmun\'s."',
         '"Solo chuba killya."'
     ];
     const attirbutionsArray = [
         "- Figrin D'an",
-        "- Merl Tosche, Owner of Tosche Station",
         "- Oga Garra, Owner of Oga's Cantina on Batuu",
+        "- Merl Tosche, Owner of Tosche Station",
         "- Jabba the Hutt"
     ];
     for (let i = 0; i < 4; i++) {
