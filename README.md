@@ -3,7 +3,6 @@
 Some joke about scum and villainy
 
 #### TO-DO NEXT
-- index; choose fonts for splash text
 - play with background color
 - play with underlines for tabs
 #### TO-DO LATER
@@ -13,7 +12,6 @@ Some joke about scum and villainy
 - play with tab colors
 - index; iron out responsiveness and breakpoints for tiles
 - index; iron out text wrap behavior and size for tiles
-- index; figure out some way to make testimonials look better
 - contact; fix style on desktop
 ##### Other
 - separate css into separate files that get packaged into one?
@@ -22,6 +20,13 @@ Some joke about scum and villainy
 ##### Maybe
 
 #### DONE
+- *0.4.4*
+- index; choose fonts for headings and body text
+- index; adjust spacing for main grid
+- index; change testimonials background color and text color
+- index; add testimony label
+- index; add testimony-left class to testimonies in the left column to fix layout on desktop
+- index; add testimonials wrapper div and additional "attribution" element so the quote-sayer's name is smaller than the quote
 - *0.4.3*
 - index; adjust splash image height on mobile
 - index; adjust font sizes

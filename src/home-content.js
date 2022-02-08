@@ -10,7 +10,6 @@ const createHome = () => {
     splashRestaurantName.textContent = "Chalmun's Spaceport Cantina";
     const splashRestaurantSlogan = document.createElement("h2");
     splashRestaurantSlogan.classList.add("splash-text", "h2-h");
-    // splashRestaurantSlogan.id = "restaurant-slogan";
     splashRestaurantSlogan.textContent = "Live music! Cheap drinks!";
     const splashLocation = document.createElement("h3");
     splashLocation.classList.add("splash-text", "h3-h");
@@ -29,7 +28,7 @@ const createHome = () => {
         "Toast your success or drown your sorrows while listening to the hottest bands in town!",
         `url("${MazBand}")`,
         `url("${AlienPatron}")`,
-        "We don't care what you are — Mind your own business and you're welcome anytime \n (No droids)"
+        "We don't care what you are. Mind your own business and you're welcome anytime! \n (No droids)"
     ];
     let smallTileTracker = 4;
     const fragment = document.createDocumentFragment();
@@ -51,25 +50,43 @@ const createHome = () => {
         fragment.append(newTile);
     }
     const testimonials = document.createElement("div");
-    testimonials.classList.add("big-tile");
     testimonials.id = "testimonials";
+    const testimonialsHeader = document.createElement("h2");
+    testimonialsHeader.id = "testimonials-header";
+    testimonialsHeader.textContent = "Testimonials";
+    testimonials.append(testimonialsHeader);
     const testimonialsArray = [
-        '"I love it so much, my favorite bar"',
-        '"I do all my business dealings here"',
-        '"Can\'t be beat if you\'re looking for a good time"',
-        '"Not for the faint-hearted"'
+        '"I do all my business here. A loud, rough bar perfect for private conversations."',
+        '"If you can\'t make it to my cantina, Chalmun\'s is the next best thing."',
+        '"I play gigs everywhere on Tatooine but nothing beats Chalmun\'s."',
+        '"Solo chuba killya."'
+    ];
+    const attirbutionsArray = [
+        "- Figrin D'an",
+        "- Merl Tosche, Owner of Tosche Station",
+        "- Oga Garra, Owner of Oga's Cantina on Batuu",
+        "- Jabba the Hutt"
     ];
     for (let i = 0; i < 4; i++) {
+        const testimonyWrapper = document.createElement("div");
+        testimonyWrapper.classList.add("testimony-wrapper");
+        if (i % 2 === 0) {
+            testimonyWrapper.classList.add("testimony-left");
+        }
         const testimony = document.createElement("div");
         testimony.classList.add("testimony");
         testimony.textContent = testimonialsArray[i];
-        testimonials.append(testimony);
+        const attribution = document.createElement("p");
+        attribution.classList.add("attribution");
+        attribution.textContent = attirbutionsArray[i];
+        testimonyWrapper.append(testimony, attribution);
+        testimonials.append(testimonyWrapper);
     }
-    gridContainer.append(fragment, testimonials);
+    gridContainer.append(fragment);
 
     const homeContainer = document.createElement("section");
     homeContainer.classList.add("content-container");
-    homeContainer.append(splashTile, photoCaption, gridContainer);
+    homeContainer.append(splashTile, photoCaption, gridContainer, testimonials);
 
     const baseContainer = document.querySelector(".base-container");
     baseContainer.after(homeContainer);
