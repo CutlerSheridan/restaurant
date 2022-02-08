@@ -5,20 +5,25 @@ Some joke about scum and villainy
 #### TO-DO NEXT
 #### TO-DO LATER
 ##### Features
-- create Contact page
 ##### Behavior
-- fix tabs changing sizes when clicked on desktop
 ##### Style
-- index; add spotify gradient to splash image
+- play with underlines for tabs
 - index; iron out responsiveness and breakpoints for tiles
 - index; iron out text wrap behavior and size for tiles
-- index; change size of splash image on desktop
+- index; add underlines or sidelines to testimonials?
+- contact; fix style on desktop
 ##### Other
 - separate css into separate files that get packaged into one?
 - research try/catch statements
+- create HTML from template
 ##### Maybe
 
 #### DONE
+- *0.4.2*
+- index; add spotify gradient to splash image
+- index; change size of splash image
+- fix tabs changing sizes when clicked on desktop (added "overflow: scroll" to :root)
+- change cursor on hover over tabs to pointer
 - *0.4.1*
 - contact; convert HTML to JS
 - *0.4.0*
