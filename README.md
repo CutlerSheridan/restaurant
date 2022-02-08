@@ -3,14 +3,17 @@
 Some joke about scum and villainy
 
 #### TO-DO NEXT
+- index; choose fonts for splash text
+- play with background color
+- play with underlines for tabs
 #### TO-DO LATER
 ##### Features
 ##### Behavior
 ##### Style
-- play with underlines for tabs
+- play with tab colors
 - index; iron out responsiveness and breakpoints for tiles
 - index; iron out text wrap behavior and size for tiles
-- index; add underlines or sidelines to testimonials?
+- index; figure out some way to make testimonials look better
 - contact; fix style on desktop
 ##### Other
 - separate css into separate files that get packaged into one?
@@ -19,6 +22,9 @@ Some joke about scum and villainy
 ##### Maybe
 
 #### DONE
+- *0.4.3*
+- index; adjust splash image height on mobile
+- index; adjust font sizes
 - *0.4.2*
 - index; add spotify gradient to splash image
 - index; change size of splash image

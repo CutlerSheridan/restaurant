@@ -55,7 +55,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: calc(100vh - 5rem);
+    height: calc(100vh - 11rem);
     background-image: linear-gradient(0deg, rgba(0,0,0,.5) 50%, #ffffff44 100%), url("/src/index-images/cantina-band.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -75,12 +75,15 @@ header {
 }
 .photo-caption {
     position: absolute;
-    top: calc(100vh - 11rem);
+    top: calc(100vh - 11.5rem);
     margin-left: 1.5rem;
     font-style: italic;
     color: antiquewhite;
 }
 @media only screen and (min-width: 600px) {
+    #splash-tile {
+        height: calc(100vh - 5rem);
+    }
     .photo-caption {
         top: calc(100vh - 5rem);
     }
@@ -100,8 +103,7 @@ header {
 }
 .small-tile {
     text-align: center;
-    margin: 2rem;
-    border: 1px solid pink;
+    margin: .5rem;
 }
 @media only screen and (min-width: 600px) {
     .grid-container {
@@ -111,6 +113,8 @@ header {
         margin: 2rem auto;
         width: 25vw;
         height: 25vw;
+        font-size: 3rem;
+        line-height: 4rem;
     }
 }
 .img-tile {
@@ -131,10 +135,11 @@ header {
     margin: 1rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    /* gap: 1.2rem; */
+    border-top: .5rem solid black;
+    font-size: 2.4rem;
 }
 .testimony {
-    margin: auto;
+    margin: 4rem auto;
     display: flex;
     justify-content: center;
     align-items: center;
