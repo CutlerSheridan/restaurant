@@ -9,7 +9,6 @@ Some joke about scum and villainy
 ##### Behavior
 ##### Style
 - index; should grid have black dividers?
-- contact; fix style on desktop
 ##### Other
 - separate css into separate files that get packaged into one?
 - research try/catch statements
@@ -17,6 +16,14 @@ Some joke about scum and villainy
 ##### Maybe
 
 #### DONE
+- *0.4.7*
+- contact; invert h2
+- index; invert testimony heading
+- contact; add breakpoints to make responsive
+- index; play with grid border some more
+- create pri and sec color variables, adjust goldenrod shade
+- index; change splash text colors
+- index; fix "No droids" so it's on another line
 - *0.4.6*
 - menu; change style
 - menu; add breakpoints for menu item text size changes

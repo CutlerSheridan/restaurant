@@ -19,18 +19,17 @@
     font-style: italic;
 }
 :root {
+    --clr-pri: rgb(223, 167, 25);
+    --clr-sec: black;
     font-size: 62.5%;
-    color: black;
-    background-color: goldenrod;
+    color: var(--clr-sec);
+    background-color: var(--clr-pri);
     overflow: scroll;
 }
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* font-size: inherit; */
-    /* font-family: inherit; */
-    /* color: inherit; */
 }
 body {
     height: 100%;
@@ -60,7 +59,7 @@ header {
 }
 .active-tab,
 .tab:hover {
-    border-bottom: .6rem solid black;
+    border-bottom: .6rem solid var(--clr-sec);
     cursor: pointer;
 }
 /* -- HEADER END -- */
@@ -83,7 +82,7 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    color: antiquewhite;
+    color: rgb(252, 189, 29);
 }
 .splash-text {
     display: block;
@@ -91,6 +90,8 @@ header {
 }
 .h1-h {
     font-size: 4.5rem;
+    width: fit-content;
+    /* background: var(--clr-sec); */
 }
 .h2-h {
     margin: .5rem;
@@ -126,7 +127,7 @@ header {
     top: calc(100vh - 11.5rem);
     margin-left: 1.5rem;
     font-style: italic;
-    color: antiquewhite;
+    color: var(--clr-pri);
 }
 @media only screen and (min-width: 600px) {
     #splash-tile {
@@ -143,16 +144,17 @@ header {
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: calc(50vw - .35rem);
+    grid-auto-rows: calc(50vw - .15rem);
     gap: .6rem;
     font-size: 1.8rem;
     font-weight: bold;
-    background: black;
-    color: black;
+    background: var(--clr-sec);
+    color: var(--clr-sec);
 }
 .small-tile {
     text-align: center;
-    background: goldenrod;
+    background: rgb(223, 167, 25);
+    white-space: pre-wrap;
 }
 @media only screen and (min-width: 315px) {
     .grid-container {
@@ -166,10 +168,10 @@ header {
 }
 @media only screen and (min-width: 800px) {
     .grid-container {
-        grid-auto-rows: auto;
+        grid-auto-rows: 35rem;
         width: 70.6rem;
-        /* border-left: .6rem solid black; */
-        /* border-right: .6rem solid black; */
+        /* border-left: .6rem solid var(--clr-sec); */
+        /* border-right: .6rem solid var(--clr-sec); */
     }
     .small-tile {
         margin: 0 auto;
@@ -198,14 +200,17 @@ header {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 2rem;
     font-size: 2.4rem;
-    background: black;
-    color: goldenrod;
+    background: var(--clr-sec);
+    color: var(--clr-pri);
 }
 #testimonials-header {
     grid-column-end: span 2;
     margin: 3.3rem auto 2.3rem auto;
+    padding: .4rem 1.2rem;
     font-family: "Aliens Among Us";
     font-size: 2.8rem;
+    background: var(--clr-pri);
+    color: var(--clr-sec);
 }
 .testimony-wrapper {
     margin-bottom: 3.3rem;
@@ -243,17 +248,16 @@ header {
     padding: .5rem;
     width: 16rem;
     text-align: center;
-    /* background: black; */
-    /* color: goldenrod; */
+    /* background: var(--clr-sec); */
+    /* color: var(--clr-pri); */
 }
 .h2-m {
     margin: auto;
     padding: .5rem 0 0rem 0;
-    /* width: 20rem; */
     text-align: center;
     font-size: 3rem;
-    background: black;
-    color: goldenrod;
+    background: var(--clr-sec);
+    color: var(--clr-pri);
 }
 .menu-item-container {
     margin: 2.2rem auto;
@@ -261,9 +265,9 @@ header {
     max-width: 50rem;
     display: flex;
     align-items: center;
-    border: .6rem solid black;
-    /* background: black; */
-    /* color: goldenrod; */
+    border: .6rem solid var(--clr-sec);
+    /* background: var(--clr-sec); */
+    /* color: var(--clr-pri); */
 }
 .menu-text-container {
     margin: auto;
@@ -289,7 +293,7 @@ header {
     height: 10rem;
     width: 10.6rem;
     object-fit: cover;
-    border-left: .6rem solid black;
+    border-left: .6rem solid var(--clr-sec);
 }
 @media only screen and (min-width: 600px) {
     .menu-item-name {
@@ -300,12 +304,12 @@ header {
         font-size: 2.3rem;
     }
     .pic-container {
-        height: 13rem;
-        width: 13.6rem;
+        height: 12rem;
+        width: 12.6rem;
     }
     .menu-item-pic {
-        height: 13rem;
-        width: 13.6rem;
+        height: 12rem;
+        width: 12.6rem;
     }
 }
 
@@ -327,13 +331,37 @@ header {
     padding-left: 1rem;
     padding-bottom: .2rem;
     width: fit-content;
-    font-size: 2rem;
-    border-left: .6rem solid black;
-    /* background: pink; */
+    font-size: 2.4rem;
+    border-left: .6rem solid var(--clr-sec);
 }
 .h2-c {
     margin-bottom: .5rem;
+    padding: .4rem 1.2rem;
+    width: fit-content;
     font-family: "Aliens Among Us";
-    font-size: 1.8rem;
+    font-size: 2.2rem;
+    letter-spacing: .1rem;
+    background: var(--clr-sec);
+    color: var(--clr-pri);
+}
+@media only screen and (min-width: 550px) {
+    .contact-block {
+        margin-left: 5rem;
+        margin-bottom: 3rem;
+    }
+}
+@media only screen and (min-width: 850px) {
+    .contact-block {
+        margin: 4rem 8rem;
+        font-size: 3rem;
+    }
+    .h2-c {
+        font-size: 2.6rem;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .contact-block {
+        margin-left: 12rem;
+    }
 }
 /* -- CONTACT END -- */

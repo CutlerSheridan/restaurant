@@ -28,7 +28,7 @@ const createHome = () => {
         "Toast your success or drown your sorrows while listening to the hottest bands in town!",
         `url("${MazBand}")`,
         `url("${AlienPatron}")`,
-        "We don't care what you are. Mind your own business and you're welcome anytime! \n (No droids)"
+        "We don't care what you are.* Mind your own business and you're welcome anytime! \n\n*No droids"
     ];
     let smallTileTracker = 4;
     const fragment = document.createDocumentFragment();
@@ -62,9 +62,9 @@ const createHome = () => {
         '"Solo chuba killya."'
     ];
     const attirbutionsArray = [
-        "- Figrin D'an",
-        "- Oga Garra, Owner of Oga's Cantina on Batuu",
         "- Merl Tosche, Owner of Tosche Station",
+        "- Oga Garra, Owner of Oga's Cantina on Batuu",
+        "- Figrin D'an",
         "- Jabba the Hutt"
     ];
     for (let i = 0; i < 4; i++) {
