@@ -239,20 +239,31 @@ header {
 /* -- MENU START -- */
 
 .h1-m {
-    margin: 3rem 0 .8rem 0;
+    margin: 3rem auto .8rem auto;
+    padding: .5rem;
+    width: 16rem;
     text-align: center;
+    /* background: black; */
+    /* color: goldenrod; */
 }
 .h2-m {
+    margin: auto;
+    padding: .5rem 0 0rem 0;
+    /* width: 20rem; */
     text-align: center;
     font-size: 3rem;
+    background: black;
+    color: goldenrod;
 }
 .menu-item-container {
     margin: 2.2rem auto;
     width: 90vw;
-    max-width: 70rem;
+    max-width: 50rem;
     display: flex;
     align-items: center;
     border: .6rem solid black;
+    /* background: black; */
+    /* color: goldenrod; */
 }
 .menu-text-container {
     margin: auto;
@@ -261,25 +272,41 @@ header {
     font-weight: bold;
 }
 .menu-item-name {
-    font-size: 1.6rem;
     margin-bottom: .5rem;
+    font-size: 1.6rem;
     letter-spacing: .1rem;
     font-family: "Aliens Among Us";
 }
 .menu-item-desc {
     font-size: 2rem;
     font-weight: initial;
-    /* font-style: italic; */
 }
 .pic-container {
     height: 10rem;
-    width: 10rem;
+    width: 10.6rem;
 }
 .menu-item-pic {
     height: 10rem;
-    width: 10rem;
+    width: 10.6rem;
     object-fit: cover;
     border-left: .6rem solid black;
+}
+@media only screen and (min-width: 600px) {
+    .menu-item-name {
+        margin-bottom: 1rem;
+        font-size: 2.3rem;
+    }
+    .menu-item-desc {
+        font-size: 2.3rem;
+    }
+    .pic-container {
+        height: 13rem;
+        width: 13.6rem;
+    }
+    .menu-item-pic {
+        height: 13rem;
+        width: 13.6rem;
+    }
 }
 
 /* -- MENU END -- */
@@ -299,7 +326,14 @@ header {
     margin: 2rem 1rem;
     padding-left: 1rem;
     padding-bottom: .2rem;
+    width: fit-content;
     font-size: 2rem;
     border-left: .6rem solid black;
+    /* background: pink; */
+}
+.h2-c {
+    margin-bottom: .5rem;
+    font-family: "Aliens Among Us";
+    font-size: 1.8rem;
 }
 /* -- CONTACT END -- */

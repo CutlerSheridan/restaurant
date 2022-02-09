@@ -8,6 +8,7 @@ Some joke about scum and villainy
 ##### Features
 ##### Behavior
 ##### Style
+- index; should grid have black dividers?
 - contact; fix style on desktop
 ##### Other
 - separate css into separate files that get packaged into one?
@@ -16,6 +17,10 @@ Some joke about scum and villainy
 ##### Maybe
 
 #### DONE
+- *0.4.6*
+- menu; change style
+- menu; add breakpoints for menu item text size changes
+- contact; change h2 font
 - *0.4.5*
 - change selected tab to underline
 - index; revamp grid style
