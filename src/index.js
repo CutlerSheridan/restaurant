@@ -35,9 +35,7 @@ const controlTabs = (() => {
         if (!e.target.classList.contains("active-tab")) {
             tabs.forEach(tab => tab.classList.remove("active-tab"));
             e.target.classList.add("active-tab");
-            try {
-                clearDOMBody();
-            } catch { }
+            clearDOMBody();
             switch (e.target.id) {
                 case "tab-home":
                     createHome();

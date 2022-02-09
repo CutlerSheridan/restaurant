@@ -3,19 +3,18 @@
 Some joke about scum and villainy
 
 #### TO-DO NEXT
-- play with background color
 #### TO-DO LATER
 ##### Features
 ##### Behavior
 ##### Style
-- index; should grid have black dividers?
 ##### Other
 - separate css into separate files that get packaged into one?
-- research try/catch statements
-- create HTML from template
 ##### Maybe
 
 #### DONE
+- *1.0.0*
+- create HTML from template
+- replace try/catch with more elegant conditional in clearDOMBody()
 - *0.4.7*
 - contact; invert h2
 - index; invert testimony heading
