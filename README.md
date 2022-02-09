@@ -12,6 +12,8 @@ Some joke about scum and villainy
 ##### Maybe
 
 #### DONE
+- *1.0.1*
+- load and import css into js for bundling in ./dist
 - *1.0.0*
 - create HTML from template
 - replace try/catch with more elegant conditional in clearDOMBody()
